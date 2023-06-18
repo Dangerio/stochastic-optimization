@@ -1,0 +1,181 @@
+% Этот шаблон документа разработан в 2014 году
+% Данилом Фёдоровых (danil@fedorovykh.ru) 
+% для использования в курсе 
+% <<Документы и презентации в \LaTeX>>, записанном НИУ ВШЭ
+% для Coursera.org: http://coursera.org/course/latex .
+% Исходная версия шаблона --- 
+% https://www.writelatex.com/coursera/latex/2
+
+\documentclass[../main.tex]{subfiles}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%%% Дополнительная работа с математикой
+\usepackage{amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{amsmath}
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+%\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+%% Шрифты
+\usepackage{euscript}	 % Шрифт Евклид
+\usepackage{mathrsfs} % Красивый матшрифт
+
+%% Свои команды
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+	{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+\graphicspath{{images/}{images2/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
+
+%%% Работа с таблицами
+\usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage[table]{xcolor}
+
+% код в matlab
+\usepackage{matlab-prettifier}
+\usepackage{listings,lstautogobble}
+\lstset{autogobble=true}
+
+
+
+\begin{document} % конец преамбулы, начало документа
+	В данной главе будет использован метод роения частиц для минимизации нескольких трудных для оптимизации функций.
+	
+	Для начала реализуем метод роения частиц, причем для ускорения работы алгоритма постараемся избежать использования циклов там, где это возможно. Вместо этого будем стараться выполнять операции в матричном виде.
+	
+	Также стоит отметить, что начальное приближение вектора положения частиц и их скоростей будет генерироваться из равномерного распределения на отрезке $[\underline{x}, \bar{x}]$ и $[\underline{x} - \bar{x}, \bar{x} - \underline{x}]$ соответственно. Параметры $\underline{x},  \bar{x}$ будут задаваться исследователем.
+	
+	В таком случае код метода роения частиц будет иметь следующий вид:
+	
+	\begin{lstlisting}[
+		frame=single,
+		numbers=left,
+		style=Matlab-Pyglike]
+		function [argvalue_global, argmin_global] = particle_swarm(f, dim, x_lower, x_upper, alpha, beta, gamma, M, L) 
+		X = unifrnd(x_lower, x_upper, M, dim);
+		V = unifrnd(x_lower - x_upper, x_upper - x_lower, M, dim); 
+		X = X + V;
+		y = f(X);
+		argvalue_local = y;
+		argmin_local = X;
+		
+		[argvalue_global, idxmin_global] = min(argvalue_local);
+		argmin_global = argmin_local(idxmin_global, :);
+		
+		for t = 1:L
+		  xi_1 = repmat(unifrnd(0, 1, M, 1), 1, dim);
+		  xi_2 = repmat(unifrnd(0, 1, M, 1), 1, dim);
+	 	  V = alpha * V + beta * xi_1 .* (argmin_local - X) +  gamma * xi_2 .* (argmin_global - X);
+		  X = X + V;
+		  y = f(X);
+		  [argvalue_local, idxmin_local] = min([argvalue_local, y], [], 2);
+		  mask_idx = find(idxmin_local == 2);
+		  argmin_local(mask_idx, :) = X(mask_idx, :);
+		  [argvalue_global, idxmin_global] = min(argvalue_local);
+		  argmin_global = argmin_local(idxmin_global, :);
+		end
+	\end{lstlisting}
+	
+	Протестируем данный метод на функции Розенброка, которая имеет следующий вид:
+	
+	\[f(x, y) = (1 - x)^2 + 100(y-x^2)^2\]
+	
+	Видно, что глобальный минимум функции достигается в точке $(x, y) = (1, 1)$
+	
+	Положим $\underline{x} = -10,  \bar{x} = 10, \alpha = 0.95, \beta = 0.2, \gamma=0.2$, а также количество частиц зафиксируем на уровне 100, количество итераций будет равным 1000. В результате применения метода получим следующее:
+	
+	\begin{lstlisting}[
+		frame=single,
+		numbers=left,
+		style=Matlab-Pyglike]
+		>> F = @(X)(1 - X(:, 1)).^2 + 100 * (X(:, 2) - X(:, 1).^2).^2
+		
+		F =
+		
+		function_handle with value:
+		
+		@(X)(1-X(:,1)).^2+100*(X(:,2)-X(:,1).^2).^2
+		
+		>> [y, x] = particle_swarm(F, 2, -10, 10, 0.95, 0.2, 0.2, 100, 1000)
+		
+		y =
+		
+		5.3524e-22
+		
+		
+		x =
+		
+		1.0000    1.0000
+		
+		
+	\end{lstlisting}
+	
+	Таким образом, глобальный минимум был найден, причем алгоритм отработал очень быстро, чему поспособствовало использование матричных вычислений.
+	
+	Теперь протестируем метод роения частиц на другой трудной для оптимизации функции, имеющей следующий вид:
+	
+	\[\begin{aligned}
+		f(x, y, z) &= 0.01(x-0.5)^2 + |x^2-y| + |x^2 - z| \\
+		-0.2 &\leqslant x \leqslant 1, \text{ } -0.3 \leqslant y \leqslant 1, \text{ }
+		 -0.5 \leqslant z \leqslant 1 \\
+	\end{aligned}\]
+
+	Известно, что глобальный минимум этой функции достигается в точке $(x, y, z) = (0.5, 0.25, 0.25)$
+	
+	Применим метод роения частиц к этой функции, пусть $\underline{x} = -1,  \bar{x} = 1$, а количество итераций возьмем равным $10^6$ (оно было подобрано на основании нескольких запусков). В результате получим следующее:
+	
+	\begin{lstlisting}[
+		frame=single,
+		numbers=left,
+		style=Matlab-Pyglike]
+	
+	>> F = @(X)0.01 * (X(:, 1) - 0.5).^2 + abs(X(:, 1).^2 - X(:, 2)) + abs(X(:, 1).^2 - X(:, 3))
+	
+	F =
+	
+	function_handle with value:
+	
+	@(X)0.01*(X(:,1)-0.5).^2+abs(X(:,1).^2-X(:,2))+abs(X(:,1).^2-X(:,3))
+	
+	>> [y, x] = particle_swarm(F, 3, -1, 1, 0.95, 0.2, 0.2, 100, 10^6)
+	
+	y =
+	
+	0
+	
+	
+	x =
+	
+	0.5000    0.2500    0.2500
+	
+	>> 
+	
+		
+		
+	\end{lstlisting}
+
+	Видно, что глобальный минимум был найден. Алгоритм работал примерно 10-12 секунд, что можно считать неплохим результатом.
+	
+	Таким образом, в данной главе был реализован метод роения частиц в MATLAB и с помощью него были успешно найдены глобальные минимумы двух непростых для оптимизации функций.
+\end{document} % конец документа
