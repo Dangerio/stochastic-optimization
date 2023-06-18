@@ -7,7 +7,7 @@ $$H(K_1, K_2) =  \left|\sum_{a_k \in K_1}a_k - \sum_{a_m \in K_2}a_m \right|$$
 
 Данная задача сводится к минимизации следующей функции 
 
-$$ f(x) = \left|\sum_{k=1}^{n}k \cdot \mathbb{I}\{x_k = 1\}  - \sum_{k=1}^{n}k \cdot \mathbb{I}\{x_k = 0\} \right| = \left|\sum_{k=1}^{n}k \cdot (\mathbb{I}\{x_k = 1\}  -\mathbb{I}\{x_k = 0\})\right|
+$$ f(x) = \left|\sum_{k=1}^{n}k \cdot \mathbb{I}(x_k = 1)  - \sum_{k=1}^{n}k \cdot \mathbb{I}(x_k = 0) \right| = \left|\sum_{k=1}^{n}k \cdot (\mathbb{I}(x_k = 1)  -\mathbb{I}(x_k = 0))\right|
 $$
 
 Описание генетического алгоритма:
