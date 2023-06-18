@@ -8,9 +8,11 @@ $$
 $$
 Ax \leqslant b 
 $$
+
 $$
 x_i \geqslant 0  \text{ } \forall i = 1, \dots, n
 $$
+
 $$
 x_i \in \mathbb{Z}  \text{ }  \forall i \in Z
 $$
