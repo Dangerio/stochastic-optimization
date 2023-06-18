@@ -15,8 +15,7 @@ $$
 x_i \in \mathbb{Z}  \text{ }  \forall i \in Z
 $$
 
-
-где $A \in Mat_{m \text{ } n}(\mathbb{R}_+)$; $b \in \mathbb{R}_+^m$; $c \in \mathbb{R}_+^n$; $Z \subseteq \{1, 2, \dots, n\}$;
+где $A \in Mat_{m n}(\mathbb{R}_+)$; $b \in \mathbb{R}_+^m$; $c \in \mathbb{R}_+^n$; $Z \subseteq \{1, 2, \dots, n\}$;
 
 Для ее решения будет использован генетический алгоритм:
 1) Генерация популяции генов случайным образом.
