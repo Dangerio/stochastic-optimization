@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.7)  18 JUN 2023 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.7)  22 JUN 2023 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,27 +735,27 @@ File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Info: Redefining \th on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Info: Redefining \th on input line 72.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count315
@@ -778,7 +778,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 72.
 
 (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -791,9 +791,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
@@ -803,133 +803,198 @@ LaTeX Info: Redefining \nameref on input line 67.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
 
 LaTeX Font Warning: Font shape `T2A/cmr/m/up' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 69.
+(Font)              using `T2A/cmr/m/n' instead on input line 74.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
 
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 6
-9.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 7
+4.
 
 (c:/texlive/2022/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `OML/cmr/m/up' undefined
-(Font)              using `OML/cmr/m/it' instead on input line 69.
+(Font)              using `OML/cmr/m/it' instead on input line 74.
 
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <14.4> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 69.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 69.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <7> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 69.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
-9.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
+4.
 (c:/texlive/2022/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `OMS/cmr/m/up' undefined
-(Font)              using `OMS/cmr/m/n' instead on input line 69.
+(Font)              using `OMS/cmr/m/n' instead on input line 74.
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 69
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 74
 .
 (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for PD1+cmr on input line 6
-9.
-LaTeX Font Info:    No file PD1cmr.fd. on input line 69.
+LaTeX Font Info:    Trying to load font information for PD1+cmr on input line 7
+4.
+LaTeX Font Info:    No file PD1cmr.fd. on input line 74.
 
 
 LaTeX Font Warning: Font shape `PD1/cmr/m/up' undefined
-(Font)              using `PD1/pdf/m/n' instead on input line 69.
+(Font)              using `PD1/pdf/m/n' instead on input line 74.
 
-LaTeX Font Info:    Trying to load font information for PU+cmr on input line 69
+LaTeX Font Info:    Trying to load font information for PU+cmr on input line 74
 .
-LaTeX Font Info:    No file PUcmr.fd. on input line 69.
+LaTeX Font Info:    No file PUcmr.fd. on input line 74.
 
 LaTeX Font Warning: Font shape `PU/cmr/m/up' undefined
-(Font)              using `PU/pdf/m/n' instead on input line 69.
+(Font)              using `PU/pdf/m/n' instead on input line 74.
 
 (./Annealing_1.tex
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 63.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 63.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <6> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 63.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+ [1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-73.
+88.
  (c:/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 74.
-
-[1
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<images/1//1.png, id=69, 235.63031pt x 233.37187pt>
-File: images/1//1.png Graphic file (type png)
-<use images/1//1.png>
-Package pdftex.def Info: images/1//1.png  used on input line 149.
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 89.
+ [2] [3]
+<images/1//ann_1.png, id=140, 235.63031pt x 233.37187pt>
+File: images/1//ann_1.png Graphic file (type png)
+<use images/1//ann_1.png>
+Package pdftex.def Info: images/1//ann_1.png  used on input line 166.
 (pdftex.def)             Requested size: 195.0pt x 193.1324pt.
- [3 <./images/1//1.png>]
-<images/1//2.png, id=95, 349.305pt x 341.77687pt>
-File: images/1//2.png Graphic file (type png)
-<use images/1//2.png>
-Package pdftex.def Info: images/1//2.png  used on input line 173.
+<images/1//ann_2.png, id=142, 349.305pt x 341.77687pt>
+File: images/1//ann_2.png Graphic file (type png)
+<use images/1//ann_2.png>
+Package pdftex.def Info: images/1//ann_2.png  used on input line 193.
 (pdftex.def)             Requested size: 272.99881pt x 267.13246pt.
- [4 <./images/1//2.png>]) [5] (./main.aux)
+
+[4 <./images/1//ann_1.png>] [5 <./images/1//ann_2.png>]) (./Annealing_2.tex
+<images/2//ann_3.png, id=184, 582.67688pt x 639.89063pt>
+File: images/2//ann_3.png Graphic file (type png)
+<use images/2//ann_3.png>
+Package pdftex.def Info: images/2//ann_3.png  used on input line 67.
+(pdftex.def)             Requested size: 272.99881pt x 299.8113pt.
+
+[6] [7 <./images/2//ann_3.png>] [8]) [9] (./Particle_swarm.tex
+Overfull \hbox (9.89671pt too wide) in paragraph at lines 72--73
+[]\T2A/cmr/m/up/12 ƒл€ каж-дой из них ге-не-ри-ру-ет-с€ слу-чай-на€ ско-рость $
+\OML/cmm/m/it/12 v[]\OT1/cmr/m/n/12 (0) \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R[]\OM
+L/cmm/m/it/12 ; m \OT1/cmr/m/n/12 =
+ []
+
+[10] [11]
+Overfull \hbox (2.45502pt too wide) in paragraph at lines 139--140
+[]\T2A/cmr/m/up/12 ¬идно, что гло-баль-ный ми-ни-мум функ-ции до-сти-га-ет-с€ в
+ точ-ке $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y\OT1/cmr/m/n/12 ) =
+ []
+
+[12]) [13] (./Gen_alg.tex [14]
+Overfull \hbox (26.35112pt too wide) in paragraph at lines 94--95
+[]\T2A/cmr/m/up/12 “ребуетс€ ми-ни-ми-зи-ро-вать дан-ную функ-цию на мно-же-ств
+е $\OML/cmm/m/it/12 D \OT1/cmr/m/n/12 = [\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 10
+\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10][]$\T2A/cmr/m/up/12 .
+ []
+
+<images/4//gen_1.png, id=364, 761.84625pt x 645.16031pt>
+File: images/4//gen_1.png Graphic file (type png)
+<use images/4//gen_1.png>
+Package pdftex.def Info: images/4//gen_1.png  used on input line 98.
+(pdftex.def)             Requested size: 390.0pt x 330.25793pt.
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.113 		dim 
+            = size(X, 2); <./images/4//gen_1.png>] [16] [17]
+Overfull \hbox (28.4285pt too wide) detected at line 196
+[][]
+ []
+
+[18] [19] [20]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+337.
+ (c:/texlive/2022/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [21]
+[22]
+Overfull \hbox (3.2765pt too wide) in paragraph at lines 422--423
+[]\T2A/cmr/m/up/12 ѕараметры ал-го-рит-ма возь-мем сле-ду-ю-щи-ми: $\OML/cmm/m/
+it/12 M \OT1/cmr/m/n/12 = 1000\OML/cmm/m/it/12 ; M[] \OT1/cmr/m/n/12 = 200\OML/
+cmm/m/it/12 ; L \OT1/cmr/m/n/12 =
+ []
+
+[23] [24]) [25] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 737FEE047F047A336AF8A05F38C92964;235.
+(rerunfilecheck)             Checksum: E04F3BEC4AAF86D8ADA76AA978C808E0;3557.
  ) 
 Here is how much of TeX's memory you used:
- 16133 strings out of 478300
- 249619 string characters out of 5849124
- 686290 words of memory out of 5000000
- 33876 multiletter control sequences out of 15000+600000
- 486553 words of font info for 78 fonts, out of 8000000 for 9000
+ 16738 strings out of 478300
+ 258466 string characters out of 5849124
+ 819434 words of memory out of 5000000
+ 34073 multiletter control sequences out of 15000+600000
+ 487978 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,7n,76p,1467b,2086s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<c:/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
-/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/
-sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.p
-fb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (5 pages, 131753 bytes).
+ 68i,13n,76p,895b,2110s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/tex
+live/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<c:/texlive/2022
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/
+type1/public/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
+ic/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-supe
+r/sfit1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200
+.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/t
+exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texlive/202
+2/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (25 pages, 514878 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 97 named destinations out of 1000 (max. 500000)
- 39 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 806 PDF objects out of 1000 (max. 8388607)
+ 736 compressed objects within 8 object streams
+ 482 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
