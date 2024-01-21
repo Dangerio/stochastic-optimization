@@ -1,6 +1,15 @@
-function [argvalue_global, argmin_global] = particle_swarm(f, dim, x_lower, x_upper, alpha, beta, gamma, M, L) 
-X = unifrnd(x_lower, x_upper, M, dim);
-V = unifrnd(x_lower - x_upper, x_upper - x_lower, M, dim); 
+function [argvalue_global, argmin_global] = particle_swarm(f, opt_set, alpha, beta, gamma, M, L)
+dim = size(opt_set, 1);
+
+X = zeros(M, dim);
+V = zeros(M, dim);
+for i = 1:dim
+    x_lower = opt_set(i, 1);
+    x_upper = opt_set(i, 2);
+    X(:, i) = unifrnd(x_lower, x_upper, M, 1);
+    V(:, i) = unifrnd(x_lower - x_upper, x_upper - x_lower, M, 1);
+end
+
 X = X + V;
 y = f(X);
 argvalue_local = y;
