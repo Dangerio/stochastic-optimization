@@ -1,10 +1,23 @@
-function [x, y] = annealing_alg(alpha, t_0, t_thr)
+function [x, y] = annealing_alg(f, opt_set, alpha, t_0, t_thr)
+dim = size(opt_set, 1);
+x = zeros(1, dim);
+for i = 1:dim
+    lb = opt_set(i, 1);
+    ub = opt_set(i, 2);
+    x(1, i) = unifrnd(lb, ub);
+end
+
 t = t_0;
-x = unifrnd(-10, 10);
-y = x^2 * (2 + abs(sin(4 * x)));
+y = f(x);
 while t > t_thr
-    x_new = x + unifrnd(-1, 1);
-    y_new = x_new^2 * (2 + abs(sin(4 * x_new)));
+    x_new = zeros(1, dim);
+    for i = 1:dim
+        lb = opt_set(i, 1);
+        ub = opt_set(i, 2);
+        x_new(1, i) = x(1, i) + unifrnd((lb - ub) / 20, (ub - lb) / 20);
+    end
+    y_new = f([x_new]);
+
     delta_y = y_new - y;
     p = exp(-delta_y / t);
     xi = binornd(1, p);
